@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #f4f6f8;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* === PENGATURAN PETA === */
+#map {
+    flex-grow: 1;
+    height: 100%;
+    z-index: 1;
+}
+
+.leaflet-interactive:focus {
+    outline: none !important;
+}
+
+/* === PENGATURAN SIDEBAR KIRI === */
+.sidebar {
+    width: 350px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    background-color: #d35400;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar-header h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.sidebar-header p {
+    font-size: 0.9rem;
+    color: #fdebd0;
+}
+
+.filter-section {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.filter-section h3 {
+    font-size: 0.95rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Input Tanggal */
+.date-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.date-input {
+    padding: 6px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+}
+
+/* Daftar Checkbox (DIUBAH MENJADI 2 KOLOM) */
+.checkbox-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+
+    color: #555;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.checkbox-item input {
+    margin-right: 8px;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.sidebar-footer {
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    color: #7f8c8d;
+    font-style: italic;
+    border-top: 1px solid #ecf0f1;
+}
+
+/* === DESAIN POPUP HOTSPOT === */
+.hotspot-popup {
+    min-width: 200px;
+}
+
+.hotspot-popup h4 {
+    color: #d35400;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.hotspot-popup hr {
+    border: 0;
+    height: 1px;
+    background: #bdc3c7;
+    margin-bottom: 10px;
+}
+
+.hotspot-popup p {
+    margin-bottom: 4px;
+    font-size: 13px;
+    line-height: 1.4;
+}

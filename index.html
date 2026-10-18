@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGIS Persebaran Titik Api (Hotspot) di Kabupaten Sambas</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>WebGIS Persebaran Titik Api (Hotspot)</h2>
+                <h2>Kabupaten Sambas</h2>
+                <p>Periode Juli - Awal September 2026 (7/9/2026)</p>
+            </div>
+            
+            <div class="filter-section">
+                <h3>Filter Rentang Tanggal</h3>
+                <div class="date-group">
+                    <input type="date" id="filter-start-date" class="date-input">
+                    <span> s/d </span>
+                    <input type="date" id="filter-end-date" class="date-input">
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Filter Tingkat Kepercayaan</h3>
+                <!-- Checkbox tingkat kepercayaan akan dimuat otomatis -->
+                <div id="filter-kepercayaan" class="checkbox-list"></div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Filter Tipe Satelit</h3>
+                <!-- Checkbox satelit akan dimuat otomatis -->
+                <div id="filter-satelit" class="checkbox-list"></div>
+            </div>
+
+            <div class="filter-section" style="flex-grow: 1; display: flex; flex-direction: column;">
+                <h3>Filter Kecamatan</h3>
+                <!-- Checkbox kecamatan akan dimuat otomatis -->
+                <div id="filter-kecamatan" class="checkbox-list" style="overflow-y: auto;"></div>
+            </div>
+            
+            <div class="sidebar-footer">
+                <small>Centang/hilangkan centang untuk menyaring sebaran titik api.</small>
+                <br><br>
+                <small>Oleh: Alvin Andrianto Ciputra (D1041231074)</small>
+                <small>Informatika | Universitas Tanjungpura</small>
+            </div>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
