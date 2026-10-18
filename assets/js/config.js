@@ -1,6 +1,6 @@
 export const DATA_PATHS = {
-    districts: 'assets/data/Kecamatan.geojson',
-    hotspots: 'assets/data/Titik_Api.geojson'
+    districts: 'assets/data/kecamatan.geojson',
+    hotspots: 'assets/data/titik-api.geojson'
 };
 
 export const MAP_OPTIONS = {
